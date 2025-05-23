@@ -133,6 +133,9 @@ These patients are projected onto an existing atlas. You can download [unaligned
 
 Anna Qi - anqi@ucsd.edu
 
+If you use the pediatric atlas or any of these tools in your research, please cite the following citation!
+
+> Qi A, Kim C, Young N, Yu X, Crabb BT, Schuchardt EL, Hegde S, Mauger C, Young AA, Omens JH, McCulloch AD, Narayan HK. A Pediatric Cardiac Shape Atlas: Insights into the Structure of Young Healthy Hearts. In: Functional Imaging and Modeling of the Heart (FIMH) 2025. (in press)
 
 <!-- ACKNOWLEDGMENTS -->
 <!--## Acknowledgments-->
