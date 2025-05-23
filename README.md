@@ -34,11 +34,9 @@ Clone the repo
 
 <!--<p align="right">(<a href="#readme-top">back to top</a>)</p>-->
 
-## Atlas Descriptions
+## Atlas Description
 
-This pediatric biventricular atlas was created from 50 patients aged 11-18. Their hearts were modeled from cardiac magnetic resonance (CMR) images taken at ED and ES.
-This atlas was created using principal component analysis and can be used to statistically analyze pediatric shapes. Here is a visualization of the shape and functional variance
-captured by each of the first 10 shape modes:
+This pediatric biventricular atlas was created from 50 patients aged 11-18. Their hearts were modeled from cardiac magnetic resonance (CMR) images taken at ED and ES. This atlas was created using principal component analysis and can be used to statistically analyze pediatric shapes. Shown here are visualizations of the shape and functional variance captured by each of the first 10 shape modes:
 
 <table>
   <tr>
