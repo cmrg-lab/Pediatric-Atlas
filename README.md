@@ -3,7 +3,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<p align="center">
 ![pediatric atlas mean shape](./Images/EDES_average_shape.png)
+</p>
 
 MATLAB tools to interact with a biventricular atlas created at end-diastole (ED) and end-systole (ES). 
 The tools can be used to explore the atlas, visualize the atlas, and project new patients onto it. 
@@ -34,7 +36,7 @@ Clone the repo
 
 <!--<p align="right">(<a href="#readme-top">back to top</a>)</p>-->
 
-## Atlas Descriptions
+## Atlas Description
 
 This pediatric biventricular atlas was created from 50 patients aged 11-18. Their hearts were modeled from cardiac magnetic resonance (CMR) images taken at ED and ES.
 This atlas was created using principal component analysis and can be used to statistically analyze pediatric shapes. Here is a visualization of the shape and functional variance
