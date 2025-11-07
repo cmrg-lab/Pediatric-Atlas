@@ -1,5 +1,7 @@
 # A Pediatric Atlas
 
+<a href="https://doi.org/10.5281/zenodo.17554213"><img src="https://zenodo.org/badge/986615907.svg" alt="DOI"></a>
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -135,7 +137,7 @@ These patients are projected onto an existing atlas. You can download [unaligned
 
 Anna Qi - anqi@ucsd.edu
 
-If you use the pediatric atlas or any of these tools in your research, please cite the following citation!
+If you use the pediatric atlas or any of these tools in your research, please cite this paper:
 
 > Qi, A. et al. (2025). A Pediatric Cardiac Shape Atlas: Insights into the Structure of Young Healthy Hearts. In: Chabiniok, R., Zou, Q., Hussain, T., Nguyen, H.H., Zaha, V.G., Gusseva, M. (eds) Functional Imaging and Modeling of the Heart. FIMH 2025. Lecture Notes in Computer Science, vol 15673. Springer, Cham. https://doi.org/10.1007/978-3-031-94562-5_14
 
