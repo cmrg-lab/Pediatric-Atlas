@@ -3,17 +3,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![pediatric atlas mean shape](./Images/EDES_average_shape.png)
+![pediatric atlas mean shape](./Images/pedatlas_characterization/EDES_average_shape.png)
 
-MATLAB tools to interact with a biventricular atlas created at end-diastole (ED) and end-systole (ES). 
-The tools can be used to explore the atlas, visualize the atlas, and project new patients onto it. 
+MATLAB tools to interact with a biventricular pediatric atlas created at end-diastole (ED) and end-systole (ES). 
+The tools can be used to explore the atlas, visualize the atlas, and project new models onto it. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Installation
 
@@ -24,7 +24,7 @@ Clone the repo
 
 ### Download relevant files
 
-- Download the [pediatric atlas](https://drive.google.com/file/d/1bxyJrpj4AOvLQyZHaM6Xs3uAcwkg6w0a/view?usp=sharing) through google drive.
+- Download the [height-corrected](https://drive.google.com/file/d/1Jq4gvQ0RuPUy7qi0Is6Ba3t1YRGC94Ct/view?usp=sharing) or non [height-corrected](https://drive.google.com/file/d/1KaxYgoRu6UC7m-WCibOWmHVtT7h8NW8m/view?usp=sharing) pediatric atlas through google drive.
 - If you want to use 'projectOntoAtlas.m' to compare model files to an existing adult atlas, download the [adult atlas](https://www.cardiacatlas.org/biventricular-modes/) from the [cardiac atlas website](https://www.cardiacatlas.org/).
 
 <!-- LICENSE -->
@@ -36,7 +36,7 @@ Clone the repo
 
 ## Atlas Description
 
-This pediatric biventricular atlas was created from 50 patients aged 11-18. Their hearts were modeled from cardiac magnetic resonance (CMR) images taken at ED and ES. This atlas was created using principal component analysis and can be used to statistically analyze pediatric shapes. Shown here are visualizations of the shape and functional variance captured by each of the first 10 shape modes:
+This biventricular atlas was created from 93 healthy patients aged 10-21. Their hearts were modeled from cardiac magnetic resonance (CMR) images taken at ED and ES. This atlas was created using principal component analysis and can be used to statistically analyze pediatric, healthy morphology. Shown here are visualizations of the shape variance captured by the first 10 shape modes:
 
 <table>
   <tr>
@@ -47,63 +47,63 @@ This pediatric biventricular atlas was created from 50 patients aged 11-18. Thei
   </tr>
   <tr>
     <td> 1 </td>
-    <td><img src="Images/movies/mode_EDES_Anterior_1.gif"  width = 240px height = 240px ></td>
-    <td><img src="Images/movies/mode_EDES_Base_1.gif" width = 240px height = 240px></td>
-    <td><img src="Images/movies/mode_EDES_Post_1.gif" width = 240px height = 240px></td>
+    <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_1.gif"  width = 240px height = 240px ></td>
+    <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_1.gif" width = 240px height = 240px></td>
+    <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_1.gif" width = 240px height = 240px></td>
    </tr> 
    <tr>
      <td> 2 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_2.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_2.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_2.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_2.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_2.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_2.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 3 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_3.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_3.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_3.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_3.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_3.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_3.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 4 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_4.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_4.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_4.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_4.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_4.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_4.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 5 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_5.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_5.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_5.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_5.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_5.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_5.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 6 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_6.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_6.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_6.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_6.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_6.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_6.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 7 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_7.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_7.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_7.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_7.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_7.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_7.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 8 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_8.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_8.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_8.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_8.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_8.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_8.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 9 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_9.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_9.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_9.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_9.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_9.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_9.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 10 </td>
-     <td><img src="Images/movies/mode_EDES_Anterior_10.gif"  width = 240px height = 240px ></td>
-     <td><img src="Images/movies/mode_EDES_Base_10.gif" width = 240px height = 240px></td>
-     <td><img src="Images/movies/mode_EDES_Post_10.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_10.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_10.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_10.gif" width = 240px height = 240px></td>
   </tr>
 </table>
 
@@ -124,7 +124,7 @@ scores you want to visualize.
 - `plotVarianceExplained.m` will create a graph showing the variance explained by each shape mode in the atlas.
 - `plotWireframe.m` is used to visualize a biventricular mesh in a wireframe format where there is no color but the nodes are connected by black lines.
 - `projectOntoAtlas.m` will generate shape mode scores for some patients by using points described in a mesh format. 
-These patients are projected onto an existing atlas. You can download [unalignedPts.mat](https://drive.google.com/file/d/1GgcEWqYsxgcv0S49EO_lRXdQQtgtK8y0/view?usp=sharing) to try out the code. 
+These patients are projected onto an existing atlas. You can download [unalignedPts.mat](https://drive.google.com/file/d/1Vdbg8wAymEci-NykrSUnSHDpTiut2itY/view?usp=sharing) to try out the code. 
 
 <!-- CONTACT -->
 ## Contact

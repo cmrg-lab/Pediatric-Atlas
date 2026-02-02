@@ -3,7 +3,7 @@
 % Created by: Sachin Govil, adapted by Anna Qi
 
 %% Script
-load EDESHCatlas.mat
+load Data/EDESatlas.mat
 nmodes = 30; %number of modes to plot
 
 % plotting styles
@@ -14,8 +14,8 @@ gray = [0.6,0.6,0.6];
 
 figure(1); clf
 hold on
-plt1 = bar(1:nmodes,EDESHCatlas.explained(1:nmodes)','LineWidth',LW);
-plt2 = stairs(0.4:(nmodes-0.6),cumsum(EDESHCatlas.explained(1:nmodes))','k-','LineWidth',LW);
+plt1 = bar(1:nmodes,EDESatlas.explained(1:nmodes)','LineWidth',LW);
+plt2 = stairs(0.4:(nmodes-0.6),cumsum(EDESatlas.explained(1:nmodes))','k-','LineWidth',LW);
 xlabel('Mode')
 ylabel('Shape Variance Explained (%)')
 set(plt1,'FaceColor',gray); set(plt1,'EdgeColor','k');

@@ -1,3 +1,4 @@
 # exclude all matlab files
 *.mat
 *.h5
+*.DS_Store

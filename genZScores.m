@@ -3,11 +3,11 @@
 % Adapted by Anna Qi
 
 %% Script
-load EDESHCatlas.mat
-ScoresShape = zeros(size(EDESHCatlas.score));
+load Data/EDESHCatlas.mat
+ScoresShape = zeros(size(EDESatlas.score));
 
-for i=1:size(EDESHCatlas.score,2)
-    ScoresShape(:,i) = EDESHCatlas.score(:,i)/sqrt(EDESHCatlas.latent(i));
+for i=1:size(EDESatlas.score,2)
+    ScoresShape(:,i) = EDESatlas.score(:,i)/sqrt(EDESatlas.latent(i));
 end
 
 save('ScoresShape','ScoresShape');
@@ -22,3 +22,6 @@ boxplot(ScoresShape(:,1:10), 'Labels', {'1', '2', '3', ...
 xlabel("Shape Modes")
 ylabel("Shape Scores")
 title("Box Plots of first 10 shape modes")
+
+%% Save as an excel
+writematrix(ScoresShape, "Zscores.xlsx")

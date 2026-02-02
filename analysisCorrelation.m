@@ -5,8 +5,8 @@
 
 %% Script
 
-load EDESHCatlas.mat
-load ScoresShape.mat
+load Data/EDESHCatlas.mat
+load Data/ScoresShapeHC.mat
 
 nModes = 10;
 

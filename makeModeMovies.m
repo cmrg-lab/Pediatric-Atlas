@@ -12,9 +12,9 @@
 clearvars;
 close all;
 
-load('EDESHCatlas.mat');
+load('Data/EDESHCatlas.mat');
 path = 'Images/movies/';
-nModes = size(EDESHCatlas.latent,1); 
+nModes = size(EDESatlas.latent,1); 
 
 %% plot surfaces and save to png
 
@@ -22,13 +22,13 @@ nModes = size(EDESHCatlas.latent,1);
 for nview = 1:3 %three viewpoints
   for mode=1:10 %10 modes
     for s=[-3,3]
-        shapes = EDESHCatlas.mean + s* sqrt(EDESHCatlas.latent(mode)) * EDESHCatlas.coeff(:,mode)';
+        shapes = EDESatlas.mean + s* sqrt(EDESatlas.latent(mode)) * EDESatlas.coeff(:,mode)';
         S = [shapes(1:3:end)',shapes(2:3:end)',shapes(3:3:end)'];
 
         ED_Shape = S(1:5810,:);
         ES_Shape = S(5811:end,:);
 
-        ETIndices = importdata('./Data/ETIndices.txt');
+        ETIndices = importdata('Data/ETIndices.txt');
 
         h=figure('Position',[0 0 900 900],'visible','off'); %set visible to off for faster processing
         axis equal manual % this ensures that getframe() returns a consistent size
@@ -69,17 +69,17 @@ end
 for mode=1:10
     %filename = strcat('mode',num2str(mode),'_long.gif');
     filename = strcat('Images/movies/mode_EDES_Post_', num2str(mode),'.gif');
-    s1 = linspace(-3*sqrt(EDESHCatlas.latent(mode)),3*sqrt(EDESHCatlas.latent(mode)),20);
-    s2 = linspace(3*sqrt(EDESHCatlas.latent(mode)),-3*sqrt(EDESHCatlas.latent(mode)),20);
+    s1 = linspace(-3*sqrt(EDESatlas.latent(mode)),3*sqrt(EDESatlas.latent(mode)),20);
+    s2 = linspace(3*sqrt(EDESatlas.latent(mode)),-3*sqrt(EDESatlas.latent(mode)),20);
     s = [s1 s2];
     %s = s1; %save space by animating one way on scores
     for n=1:20
-        shapes = EDESHCatlas.mean + s(n) * EDESHCatlas.coeff(:,mode)';
+        shapes = EDESatlas.mean + s(n) * EDESatlas.coeff(:,mode)';
         S = [shapes(1:3:end)',shapes(2:3:end)',shapes(3:3:end)'];
         ED_Shape = S(1:5810,:);
         ES_Shape = S(5811:end,:);
 
-        ETIndices = importdata('./Data/ETIndices.txt');
+        ETIndices = importdata('Data/ETIndices.txt');
 
         h=figure('Position',[0 0 900 900],'visible','off');
         axis equal manual % this ensures that getframe() returns a consistent size
@@ -109,7 +109,7 @@ for mode=1:10
         material shiny;
         lighting gouraud ;
         axis off;
-        %title(['s=',num2str(s(n)/sqrt(EDESHCatlas.latent(mode)))],'FontSize',40,'Units', 'normalized', 'Position', [0.5, 0.5, 0],"Color","r");
+        %title(['s=',num2str(s(n)/sqrt(EDESatlas.latent(mode)))],'FontSize',40,'Units', 'normalized', 'Position', [0.5, 0.5, 0],"Color","r");
         frame = getframe(h,[250, 250, 450, 450]); 
         im = frame2im(frame); 
         [imind,cm] = rgb2ind(im,256); 
@@ -121,17 +121,18 @@ for mode=1:10
         end 
     end
 end
-%% just points
+%% save just points
+
 for mode=1:10
     h = figure;
     axis equal manual % this ensures that getframe() returns a consistent size
     filename = strcat(path,'ED_mode',num2str(mode),'_long.gif');
-    last = size(EDESHCatlas.mean,2)/2;
-    s1 = linspace(-3*sqrt(EDESHCatlas.latent(mode)),3*sqrt(EDESHCatlas.latent(mode)),11);
-    s2 = linspace(3*sqrt(EDESHCatlas.latent(mode)),-3*sqrt(EDESHCatlas.latent(mode)),11);
+    last = size(EDESatlas.mean,2)/2;
+    s1 = linspace(-3*sqrt(EDESatlas.latent(mode)),3*sqrt(EDESatlas.latent(mode)),11);
+    s2 = linspace(3*sqrt(EDESatlas.latent(mode)),-3*sqrt(EDESatlas.latent(mode)),11);
     s = [s1 s2];
     for n=1:22
-        pts = EDESHCatlas.mean' + s(n)*EDESHCatlas.coeff(:,mode);
+        pts = EDESatlas.mean' + s(n)*EDESatlas.coeff(:,mode);
         plot3(pts(1:3:last)',pts(2:3:last)',pts(3:3:last)','LineStyle','none','Marker','.')
         axis equal manual % this ensures that getframe() returns a consistent size
         xlim([-80,80]);
