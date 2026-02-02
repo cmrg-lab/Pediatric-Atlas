@@ -1,9 +1,17 @@
 # A Pediatric Atlas
 
+<a href="https://doi.org/10.5281/zenodo.17554213"><img src="https://zenodo.org/badge/986615907.svg" alt="DOI"></a>
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<<<<<<< HEAD
 ![pediatric atlas mean shape](./Images/pedatlas_characterization/EDES_average_shape.png)
+=======
+<p align="center">
+ <img src="./Images/EDES_average_shape.png">
+</p>
+>>>>>>> 9cfad45ca802068a01d38953d5cb620b54fb11a8
 
 MATLAB tools to interact with a biventricular pediatric atlas created at end-diastole (ED) and end-systole (ES). 
 The tools can be used to explore the atlas, visualize the atlas, and project new models onto it. 
@@ -131,9 +139,9 @@ These patients are projected onto an existing atlas. You can download [unaligned
 
 Anna Qi - anqi@ucsd.edu
 
-If you use the pediatric atlas or any of these tools in your research, please cite the following citation!
+If you use the pediatric atlas or any of these tools in your research, please cite this paper:
 
-> Qi A, Kim C, Young N, Yu X, Crabb BT, Schuchardt EL, Hegde S, Mauger C, Young AA, Omens JH, McCulloch AD, Narayan HK. A Pediatric Cardiac Shape Atlas: Insights into the Structure of Young Healthy Hearts. In: Functional Imaging and Modeling of the Heart (FIMH) 2025. (in press)
+> Qi, A. et al. (2025). A Pediatric Cardiac Shape Atlas: Insights into the Structure of Young Healthy Hearts. In: Chabiniok, R., Zou, Q., Hussain, T., Nguyen, H.H., Zaha, V.G., Gusseva, M. (eds) Functional Imaging and Modeling of the Heart. FIMH 2025. Lecture Notes in Computer Science, vol 15673. Springer, Cham. https://doi.org/10.1007/978-3-031-94562-5_14
 
 <!-- ACKNOWLEDGMENTS -->
 <!--## Acknowledgments-->
