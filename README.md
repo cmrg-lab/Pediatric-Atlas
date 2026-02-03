@@ -5,13 +5,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<<<<<<< HEAD
-![pediatric atlas mean shape](./Images/pedatlas_characterization/EDES_average_shape.png)
-=======
 <p align="center">
- <img src="./Images/EDES_average_shape.png">
+ <img src="./Images/pedatlas_characterization/EDES_average_shape.png">
 </p>
->>>>>>> 9cfad45ca802068a01d38953d5cb620b54fb11a8
 
 MATLAB tools to interact with a biventricular pediatric atlas created at end-diastole (ED) and end-systole (ES). 
 The tools can be used to explore the atlas, visualize the atlas, and project new models onto it. 
