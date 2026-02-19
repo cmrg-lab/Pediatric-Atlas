@@ -3,7 +3,7 @@
 % Created by: Sachin Govil, adapted by Anna Qi
 
 %% Script
-load Data/EDESatlas.mat
+load ../Data/EDESatlas.mat
 nmodes = 30; %number of modes to plot
 
 % plotting styles
@@ -30,5 +30,4 @@ yticks(0:10:100)
 
 %% look at the cumulative and individual variances
 
-T = table((1:nmodes)', cumsum(EDESHCatlas.explained(1:nmodes)), EDESHCatlas.explained(1:nmodes))
-
+T = table((1:nmodes)', cumsum(EDESatlas.explained(1:nmodes)), EDESatlas.explained(1:nmodes))

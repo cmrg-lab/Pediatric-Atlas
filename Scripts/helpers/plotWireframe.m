@@ -1,7 +1,7 @@
-function [] = plotWireframe(model)
+function [] = plotWireframe(model, indices_path)
 %% Created by: Anna Qi
 
-ETIndices = importdata('./Data/ETIndices.txt');
+ETIndices = importdata(indices_path);
 SurfaceStartEnd = [ 1,3072;       % LV (faces 1 to 3072 belong to the LV chamber...)
                     3073,4480;    % RVS
                     4481,6752;    % RVFW

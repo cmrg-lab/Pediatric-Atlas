@@ -3,7 +3,7 @@
 % Adapted by Anna Qi
 
 %% Script
-load Data/EDESHCatlas.mat
+load ../Data/EDESHCatlas.mat
 ScoresShape = zeros(size(EDESatlas.score));
 
 for i=1:size(EDESatlas.score,2)
@@ -14,7 +14,7 @@ save('ScoresShape','ScoresShape');
 
 %% Plot boxplots for first 10 shape modes
 
-load ScoresShape.mat
+load ../Data/ScoresShape.mat
 
 % plot boxplots of median + interquartile ranges
 boxplot(ScoresShape(:,1:10), 'Labels', {'1', '2', '3', ...

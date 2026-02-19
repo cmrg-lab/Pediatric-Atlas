@@ -1,4 +1,7 @@
-# exclude all matlab files
+# Exclude all data files
 *.mat
+*.txt
 *.h5
+*.xlsx
+
 *.DS_Store

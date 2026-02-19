@@ -5,13 +5,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<<<<<<< HEAD
-![pediatric atlas mean shape](./Images/pedatlas_characterization/EDES_average_shape.png)
-=======
 <p align="center">
- <img src="./Images/EDES_average_shape.png">
+ <img src="./Images/pedatlas_characterization/pedatlas_average_shape.png" width="400">
 </p>
->>>>>>> 9cfad45ca802068a01d38953d5cb620b54fb11a8
 
 MATLAB tools to interact with a biventricular pediatric atlas created at end-diastole (ED) and end-systole (ES). 
 The tools can be used to explore the atlas, visualize the atlas, and project new models onto it. 
@@ -32,8 +28,9 @@ Clone the repo
 
 ### Download relevant files
 
-- Download the [height-corrected](https://drive.google.com/file/d/1Jq4gvQ0RuPUy7qi0Is6Ba3t1YRGC94Ct/view?usp=sharing) or non [height-corrected](https://drive.google.com/file/d/1KaxYgoRu6UC7m-WCibOWmHVtT7h8NW8m/view?usp=sharing) pediatric atlas through google drive.
-- If you want to use 'projectOntoAtlas.m' to compare model files to an existing adult atlas, download the [adult atlas](https://www.cardiacatlas.org/biventricular-modes/) from the [cardiac atlas website](https://www.cardiacatlas.org/).
+- Download the [height-corrected](https://drive.google.com/file/d/1Jq4gvQ0RuPUy7qi0Is6Ba3t1YRGC94Ct/view?usp=sharing) or [non height-corrected](https://drive.google.com/file/d/1KaxYgoRu6UC7m-WCibOWmHVtT7h8NW8m/view?usp=sharing) pediatric atlas through google drive.
+- The atlases and additional matlab files used for some of the analysis in the scripts can also be found on the Zenodo attached to this repository. 
+- For comparisons to an existing adult atlas, an [adult atlas](https://www.cardiacatlas.org/biventricular-modes/) can be downloaded from the [cardiac atlas website](https://www.cardiacatlas.org/).
 
 <!-- LICENSE -->
 <!--## License-->
@@ -117,22 +114,24 @@ This biventricular atlas was created from 93 healthy patients aged 10-21. Their 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## File Descriptions
+## Project Directory Structure
 
-- `analysisCorrelation.m` is an example file of how correlation matrices with certain functional metrics can be generated. 
-This file currently cannot be ran because individual-level data such as blood pressures, ages, heights, etc. will not be publicly available.
-Feel free to replace 'MastersFile.xlsx' with your own data descriptors.
-- `atlasViewer.m` allows you to visualize each mode of the atlas as well as the mean shape. You can change the parameters to which modes and adjusted
-scores you want to visualize.
-- `genEDESModels.m` is how a 3D shape can be generated using individual PC-scores and the atlas. A set of PC scores are turned into a mesh that is used for visualization.
-- `genZScores.m` will extract PC shape scores. Every patient will have shape scores related to each PC mode.
-- `makeModeMovies.m` will create gifs of how each PC changes across its score distribution.
-- `plotSurface.m` is used to visualize mesh surfaces.
-- `plotValves.m` is used to visualize mesh valves.
-- `plotVarianceExplained.m` will create a graph showing the variance explained by each shape mode in the atlas.
-- `plotWireframe.m` is used to visualize a biventricular mesh in a wireframe format where there is no color but the nodes are connected by black lines.
-- `projectOntoAtlas.m` will generate shape mode scores for some patients by using points described in a mesh format. 
-These patients are projected onto an existing atlas. You can download [unalignedPts.mat](https://drive.google.com/file/d/1Vdbg8wAymEci-NykrSUnSHDpTiut2itY/view?usp=sharing) to try out the code. 
+```bash
+├── Data
+│   └── MeshFiles
+├── Images
+│   ├── disease_comparison
+│   └── pedatlas_characterization
+├── Models
+├── Scripts
+│   ├── helpers
+│   └── README.md
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+For more information on the scripts included in this repository, read the [README](./Scripts/README.md) in the Scripts folder. 
 
 <!-- CONTACT -->
 ## Contact

@@ -3,18 +3,18 @@
 % Created by: Anna Qi
 
 %% Script
-load Data/unalignedPts.mat
+load ../Data/unalignedPts.mat
 
 pts = [ptsED ptsES];
 nModels = size(pts,1);
 nModes = 10;
 
 % read the principal components of the adult atlas
-coeff = h5read('Data/UKBRVLV.h5', '/COEFF');
+coeff = h5read('../Data/UKBRVLV.h5', '/COEFF');
 % read the eigenvalues
-latent = h5read('Data/UKBRVLV.h5', '/LATENT');
+latent = h5read('../Data/UKBRVLV.h5', '/LATENT');
 % read the mean shape
-mean = h5read('Data/UKBRVLV.h5', '/MU');
+mean = h5read('../Data/UKBRVLV.h5', '/MU');
 
 zScores = zeros(nModels, nModes);
 

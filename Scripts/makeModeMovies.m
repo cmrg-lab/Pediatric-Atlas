@@ -9,11 +9,8 @@
 %                                     11689,11728;  % Tricuspid valve
 %                                     11729,11760]; % Pulmonary valve
 
-clearvars;
-close all;
-
-load('Data/EDESHCatlas.mat');
-path = 'Images/movies/';
+load('../Data/EDESHCatlas.mat');
+path = '../Images/pedatlas_characterization/movies/';
 nModes = size(EDESatlas.latent,1); 
 
 %% plot surfaces and save to png
@@ -28,7 +25,7 @@ for nview = 1:3 %three viewpoints
         ED_Shape = S(1:5810,:);
         ES_Shape = S(5811:end,:);
 
-        ETIndices = importdata('Data/ETIndices.txt');
+        ETIndices = importdata('../Data/ETIndices.txt');
 
         h=figure('Position',[0 0 900 900],'visible','off'); %set visible to off for faster processing
         axis equal manual % this ensures that getframe() returns a consistent size
@@ -58,7 +55,7 @@ for nview = 1:3 %three viewpoints
 
         material shiny;
         lighting gouraud ;
-        saveas(h,strcat('Images/movies/mode_EDES_',int2str(mode),'_',int2str(nview),'_',int2str(s),'.png'));
+        saveas(h,strcat(path,'/mode_EDES_',int2str(mode),'_',int2str(nview),'_',int2str(s),'.png'));
     end
   end
 end
