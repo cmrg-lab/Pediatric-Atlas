@@ -52,63 +52,69 @@ This biventricular atlas was created from 93 healthy patients aged 10-21. Their 
   </tr>
   <tr>
     <td> 1 </td>
-    <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_1.gif"  width = 240px height = 240px ></td>
+    <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_1.gif"  width = 240px height = 240px ></td>
     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_1.gif" width = 240px height = 240px></td>
     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_1.gif" width = 240px height = 240px></td>
    </tr> 
    <tr>
      <td> 2 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_2.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_2.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_2.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_2.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 3 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_3.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_3.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_3.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_3.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 4 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_4.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_4.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_4.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_4.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 5 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_5.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_5.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_5.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_5.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 6 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_6.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_6.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_6.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_6.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 7 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_7.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_7.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_7.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_7.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 8 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_8.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_8.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_8.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_8.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 9 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_9.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_9.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_9.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_9.gif" width = 240px height = 240px></td>
   </tr>
   <tr>
      <td> 10 </td>
-     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Anterior_10.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_10.gif"  width = 240px height = 240px ></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_10.gif" width = 240px height = 240px></td>
      <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_10.gif" width = 240px height = 240px></td>
+  </tr>
+  <tr>
+     <td> 11 </td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Ant_11.gif"  width = 240px height = 240px ></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Base_11.gif" width = 240px height = 240px></td>
+     <td><img src="Images/pedatlas_characterization/HC_movies/mode_EDES_Post_11.gif" width = 240px height = 240px></td>
   </tr>
 </table>
 
@@ -133,6 +139,8 @@ This biventricular atlas was created from 93 healthy patients aged 10-21. Their 
 
 For more information on the scripts included in this repository, read the [README](./Scripts/README.md) in the Scripts folder. 
 
+Individual patient data (CMRs, clinical data, point clouds) can be made available through the <a href="https://capchd.ucsd.edu/#/">Cardiac Atlas Project</a> subject to a Data Use Agreement. The CAP IDs for the pediatric healthy and diseased participants used to generate and validate the atlas can be found on the <a href="https://capchd.ucsd.edu/#/pediatric">Pediatric Atlas page</a> once a user has a log-in for the database created. 
+
 <!-- CONTACT -->
 ## Contact
 
@@ -141,12 +149,5 @@ Anna Qi - anqi@ucsd.edu
 If you use the pediatric atlas or any of these tools in your research, please cite this paper:
 
 > Qi, A. et al. (2025). A Pediatric Cardiac Shape Atlas: Insights into the Structure of Young Healthy Hearts. In: Chabiniok, R., Zou, Q., Hussain, T., Nguyen, H.H., Zaha, V.G., Gusseva, M. (eds) Functional Imaging and Modeling of the Heart. FIMH 2025. Lecture Notes in Computer Science, vol 15673. Springer, Cham. https://doi.org/10.1007/978-3-031-94562-5_14
-
-<!-- ACKNOWLEDGMENTS -->
-<!--## Acknowledgments-->
-
-<!--* []()-->
-<!--* []()-->
-<!--* []()-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
