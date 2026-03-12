@@ -1,6 +1,5 @@
 # Exclude all data files
 *.mat
-*.txt
 *.h5
 *.xlsx
 
