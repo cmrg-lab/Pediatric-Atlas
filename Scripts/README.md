@@ -3,16 +3,16 @@
 Descriptions of the scripts included.
 
 ## Atlas Creation
-- `extractPoints.m`: extracts 3D ED/ES points from model files (generated from a modeling pipeline like <a href="https://github.com/btcrabb/CAP-Automated-Pipeline">CAP-Automated-Pipeline</a> or <a href="https://github.com/UOA-Heart-Mechanics-Research/biv-me">biv-me</a>) and aligns them to a normal template.
+- `extractPoints.m`: extracts 3D ED/ES points from model files (generated from a modeling pipeline like <a href="https://github.com/btcrabb/CAP-Automated-Pipeline">CAP-Automated-Pipeline</a> or <a href="https://github.com/UOA-Heart-Mechanics-Research/biv-me">biv-me</a>) and aligns them to a biventricular template.
 - `alignPoints.m`: aligns 3D points to each other using Procrustes alignment. The models can also optionally be corrected for height.
 - `genAtlas.m`: generates a statistical shape atlas using principal component analysis. 
 
 ## Post-analysis
 
-- `analyzeCorrelations.m`: creates correlation matrices between the principal component scores of an atlas and certain clinical and functional metrics. Individual-level data such as blood pressures, ages, heights, etc. is needed to run this this script and will not be publicly available.
+- `analyzeCorrelations.m`: creates correlation matrices between the principal component scores of an atlas and clinical and functional metrics. Individual-level data such as blood pressures, ages, heights, etc. is needed to run this script and will not be publicly available.
 - `atlasViewer.m`: visualizes and saves the shape variations due to each mode of the atlas as well as the mean atlas shape. 
-- `compareCohorts.m`: separates participants used to geenrate the atlas into multiple cohorts (men vs. women, bmi >= 30 vs. bmi < 30, etc.) and quantitatively compares their PC scores.
-- `distanceAnalysis.m`: performs a Mahalanobis distance analysis on projections of a cohort onto two separate atlases. 
+- `compareCohorts.m`: separates participants used to generate the atlas into multiple cohorts (men vs. women, bmi >= 30 vs. bmi < 30, etc.) and quantitatively compares their PC scores.
+- `distanceAnalysis.m`: performs a Mahalanobis distance analysis on projections of a cohort onto two atlases. 
 - `genZScores.m`: extracts patient-specific PC scores from the atlas. 
 - `makeModeMovies.m`: create gifs of how each PC changes across its score distribution.
 - `plotVarianceExplained.m`: graphs the individual and cumulative variance explained by each shape mode in the atlas.
