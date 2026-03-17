@@ -122,16 +122,16 @@ The shape variations captured by each of the first 11 modes of the height-correc
 
 ## Getting Started
 
-Prerequisites
+**Prerequisites**
 
 - MATLAB R2021a or later (tested on R2025a)
-- The Statistica and Machine Learning Toolbox is needed for some analyses
+- The Statistics and Machine Learning Toolbox is needed for some analyses
 
 ### Installation
 
 Clone the repository:
  ```bash
- git clone https://github.com/cmrg-lab/Pediatric-Atlas.git
+git clone https://github.com/cmrg-lab/Pediatric-Atlas.git
 cd Pediatric-Atlas
  ```
 
@@ -139,7 +139,7 @@ cd Pediatric-Atlas
 
 The atlas `.mat` files are not included in the repository due to file size. Download them from one of two sources:
 
-- Google Drive: [Height-corrected atlas](https://drive.google.com/file/d/1Jq4gvQ0RuPUy7qi0Is6Ba3t1YRGC94Ct/view?usp=sharing) and the [Non-height-corrected atlas](https://drive.google.com/file/d/1KaxYgoRu6UC7m-WCibOWmHVtT7h8NW8m/view?usp=sharing).
+- Google Drive: [Height-corrected atlas](https://drive.google.com/file/d/1Jq4gvQ0RuPUy7qi0Is6Ba3t1YRGC94Ct/view?usp=sharing) and [non-height-corrected atlas](https://drive.google.com/file/d/1KaxYgoRu6UC7m-WCibOWmHVtT7h8NW8m/view?usp=sharing).
 - Zenodo: both atlas files and additional MATLAB files needed for some of the scripts are archived at the [Zenodo repository](https://doi.org/10.5281/zenodo.17554213) linked to this project. 
 
 Place the downloaded `.mat` files into the `Data/` directory before running scripts.
@@ -150,11 +150,11 @@ Place the downloaded `.mat` files into the `Data/` directory before running scri
 
 ## Usage
 
-Full documentation for all scripts is in `[Scripts/README.md](./Scripts/README.md)`. The core workflows are:
+Full documentation for all scripts is in [`Scripts/README.md`](./Scripts/README.md). The core workflows are:
 
 **1. Atlas Creation**
 
-To create a new atlas, 3D model files must first be added in a `Models/` folder. The path in `extractPoints.m` should also be updated. To extract, align and create the atlas using the PCA points, use these three scripts. 
+To create a new atlas, 3D model files must first be added in a `Models/` folder. The path in `extractPoints.m` should be updated. These scripts extract and align models, and creates the atlas using PCA.
 
 ```matlab
 % From the Scripts/directory:
@@ -165,7 +165,7 @@ run('genAtlas.m')
 
 **2. Explore and visualize the atlas**
 
-Loads the atlas and visualizes the mean shape and shape mode variations at ED and ES. Plots the variance explained by the shape modes in the atlas. Derives z-scores for individuals used to generate the atlas. Analyze correlations between atlas shape modes and clinical metrics. Cohorts within the atlas separated by sex or bmi can also be compared mode-wise.
+Loads the atlas and visualizes the mean shape and shape mode variations at ED and ES. Plots the variance explained by the shape modes. Derives z-scores for models used to generate the atlas. Analyzes correlations between atlas shape modes and clinical metrics. Cohorts within the atlas separated by sex or bmi can also be compared mode-wise.
 
 ```matlab
 run('atlasViewer.m')
@@ -185,7 +185,7 @@ run('projectOntoAtlas.m')
 
 **4. Compare populations**
 
-Compares the shape mode distributions of cohorts within the atlas. Computes Mahalanobis distances and mode-wise Z-scores distributions across separate cohorts. 
+Computes Mahalanobis distances and mode-wise Z-scores distributions across separate cohorts. 
 
 ```matlab
 run('distanceAnalysis.m')
