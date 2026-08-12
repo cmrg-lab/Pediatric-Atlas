@@ -34,7 +34,7 @@ The atlas was built using PCA on Procrustes-aligned biventricular surface meshes
 | Characteristic | Value (n=101) |
 |---|---|
 | Age (years) | 15.1 ± 2.7 |
-| Sex (male / female) | 63% / 37%  |
+| Sex (male / female) | 63% / 37% |
 | Height (cm) | 165.1 ± 14.7 |
 | Weight (kg) | 62.1 ± 19.2 |
 
@@ -118,9 +118,9 @@ cd Pediatric-Atlas
 
 ### Download relevant files
 
-The atlas `.mat` files are not included in the repository due to file size. Stlas files and additional MATLAB files needed for some of the scripts are archived at the <a href="https://doi.org/10.5281/zenodo.17554213">Zenodo repository</a> linked to this project. 
+The atlas `.mat` file is not included in the repository due to file size. The atlas is included in the <a href="https://doi.org/10.5281/zenodo.17554213">Zenodo repository</a> linked to this project. 
 
-Place the downloaded `.mat` files into the `Data/` directory before running scripts.
+Place the downloaded `.mat` file into the `Data/` directory before running scripts.
 
 <p align="right">(<a href="#pediatric-cardiac-shape-atlas">back to top</a>)</p>
 
@@ -141,7 +141,7 @@ run('genAtlas.m')
 
 **2. Explore and visualize the atlas**
 
-Loads the atlas and visualizes the mean shape and shape mode variations at ED and ES. Plots the variance explained by the shape modes. Derives z-scores for models used to generate the atlas. Analyzes correlations between atlas shape modes and clinical metrics. Cohorts within the atlas separated by sex, bmi, and/or age can also be compared mode-wise.
+Loads the atlas and visualizes the mean shape and shape mode variations at ED and ES. Plots the variance explained by the shape modes. Derives z-scores for models used to generate the atlas. Analyzes correlations between atlas shape modes and clinical metrics. Cohorts within the atlas separated by sex, BMI, and/or age can also be compared mode-wise.
 
 ```matlab
 run('atlasViewer.m')
@@ -191,13 +191,13 @@ run('reconstructionError.m')
 
 ## Data Access
 
-**Individual patient data** (CMR images, clinical data, point clouds) can be made available through the <a href="https://capchd.ucsd.edu/#/">Cardiac Atlas Project</a> subject to a Data Use Agreement. The CAP IDs for both the pediatric healthy and diseased participants used in this work are listed on the <a href="https://capchd.ucsd.edu/#/pediatric">Pediatric Atlas page</a> for registered users. 
+**Individual patient data** (CMR images, clinical data, point clouds) can be made available through the <a href="https://capchd.ucsd.edu/#/">Cardiac Atlas Project</a> subject to a Data Use Agreement. The CAP IDs for both the healthy and diseased pediatric participants used in this work are listed on the <a href="https://capchd.ucsd.edu/#/pediatric">Pediatric Atlas page</a> for registered users. 
 
 ## Contact & Citation
 
 Anna Qi - anqi@ucsd.edu
 
-If you use the pediatric atlas or any these tools in your research, please cite:
+If you use the pediatric atlas or any of these tools in your research, please cite the following:
 
 > Qi, A. et al. (2025). A Pediatric Cardiac Shape Atlas: Insights into the Structure of Young Healthy Hearts. In: Chabiniok, R., Zou, Q., Hussain, T., Nguyen, H.H., Zaha, V.G., Gusseva, M. (eds) Functional Imaging and Modeling of the Heart. FIMH 2025. Lecture Notes in Computer Science, vol 15673. Springer, Cham. https://doi.org/10.1007/978-3-031-94562-5_14
 
