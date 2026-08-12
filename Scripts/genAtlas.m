@@ -7,11 +7,11 @@
 % rerun this script isn't included for privacy.
 
 %% Script
-load Matlab_objects/alignedPtsTOF_self.mat
+load Data/alignedPts.mat
 %pts = ptsED;
 pts = [ptsED ptsES];
 
 [coeff,score,latent,tsquared,explained,mean] = pca(pts,'Algorithm','eig');
 EDESatlas = struct('coeff',coeff,'score',score,'latent',latent,'tsquared',tsquared,'explained',explained,'mean',mean);
 
-save('Matlab_objects/EDESatlas_TOF','EDESatlas');
+save('Data/EDESatlas','EDESatlas');

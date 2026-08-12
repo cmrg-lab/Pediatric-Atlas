@@ -3,14 +3,14 @@
 % Adapted by Anna Qi
 
 %% Script
-load ../Data/EDESHCatlas.mat
+load ../Data/EDESatlas.mat
 ScoresShape = zeros(size(EDESatlas.score));
 
 for i=1:size(EDESatlas.score,2)
     ScoresShape(:,i) = EDESatlas.score(:,i)/sqrt(EDESatlas.latent(i));
 end
 
-save('ScoresShape','ScoresShape');
+save('../Data/ScoresShape','ScoresShape');
 
 %% Plot boxplots for first 10 shape modes
 

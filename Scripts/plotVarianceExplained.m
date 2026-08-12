@@ -28,6 +28,6 @@ xticks(5:5:35)
 ylim([0,100])
 yticks(0:10:100)
 
-%% look at the cumulative and individual variances
+%% Print the cumulative and individual variances of each mode
 
 T = table((1:nmodes)', cumsum(EDESatlas.explained(1:nmodes)), EDESatlas.explained(1:nmodes))

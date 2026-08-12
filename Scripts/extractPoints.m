@@ -53,4 +53,4 @@ end
 
 ptsED = pts(1:2:end,:);
 ptsES = pts(2:2:end,:);
-save('unalignedPts','ptsED','ptsES');
+save('Data/unalignedPts','ptsED','ptsES');

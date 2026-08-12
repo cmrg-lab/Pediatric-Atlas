@@ -7,7 +7,7 @@
 % rerun this script isn't included for privacy.
 
 %% Script
-load unalignedPts.mat
+load Data/unalignedPts.mat
 
 meanED = mean(ptsED);
 meanED3D = reshape(meanED,3,[])';
@@ -38,9 +38,9 @@ end
 
 ptsED = alignedptsED;
 ptsES = alignedptsES;
-save('alignedPts','ptsES','ptsED')
+save('Data/alignedPts','ptsES','ptsED')
 
-%% Adjust against heights
+%% OPTIONAL: Adjust against heights
 
 patientInfo = readtable('../Data/MastersFile.xlsx','PreserveVariableNames',true);
 heights = table2array(patientInfo(:, "Height"));
@@ -68,7 +68,7 @@ patientInfo.heightFactor = predictedScale;
 % writetable(patientInfo,'Data/MastersFile.csv','Delimiter',',')  
 
 %% Scale for height
-load unalignedPts.mat
+load Data/unalignedPts.mat
 
 meanED = mean(ptsED);
 meanED3D = reshape(meanED,3,[])';
@@ -107,4 +107,4 @@ end
 
 ptsED = alignedptsED;
 ptsES = alignedptsES;
-save('alignedHCPts','ptsES','ptsED')
+save('Data/alignedHCPts','ptsES','ptsED')

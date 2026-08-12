@@ -48,7 +48,7 @@ hold on;
 
 % Statistical test and p-value annotation
 p_values = nan(1, nModes);
-y_offset = max(max(bar_data)) * 0.05; % height offset for text
+y_offset = max(max(bar_data)) * 0.10; % height offset for text
 
 for i = 1:nModes
     % Perform t-tests comparing the scores of the two cohorts
@@ -61,7 +61,7 @@ for i = 1:nModes
     % Annotate p-value
     p_text = sprintf('p = %.3f', p);
 
-    % Mark significance with a red color
+    % Annotate significant p-values with red
     if p < 0.05
         text(i, y_max + y_offset, p_text, 'HorizontalAlignment', 'center', 'Color', 'Red', 'FontSize', 10);
     else

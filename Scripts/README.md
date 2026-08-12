@@ -12,11 +12,10 @@ Descriptions of the scripts included.
 - `analyzeCorrelations.m`: creates correlation matrices between the principal component scores of an atlas and clinical and functional metrics. Individual-level data such as blood pressures, ages, heights, etc. is needed to run this script and will not be publicly available.
 - `atlasViewer.m`: visualizes and saves the shape variations due to each mode of the atlas as well as the mean atlas shape. 
 - `compareCohorts.m`: separates participants used to generate the atlas into multiple cohorts (men vs. women, bmi >= 30 vs. bmi < 30, etc.) and quantitatively compares their PC scores.
-- `distanceAnalysis.m`: performs a Mahalanobis distance analysis on projections of a cohort onto two atlases. 
 - `genZScores.m`: extracts patient-specific PC scores from the atlas. 
-- `makeModeMovies.m`: create gifs of how each PC changes across its score distribution.
+- `makeModeMovies.m`: creates gifs of how each PC changes across its score distribution.
 - `plotVarianceExplained.m`: graphs the individual and cumulative variance explained by each shape mode in the atlas.
-- `projectOntoAtlas.m` will generate shape mode scores for an external or internal patient-specific model file containing 3D points by projecting it onto an atlas. 
+- `projectOntoAtlas.m`: generates shape mode scores for an external or internal patient-specific model file containing 3D points by projecting it onto an atlas. 
 
 ### Helper Files
 - `helpers/genEDESModels.m`: generates a 3D shape point cloud using individual PC-scores an an atlas. 

@@ -6,7 +6,7 @@
 %% Script
 addpath("helpers")
 
-load ../Data/EDESHCatlas.mat
+load ../Data/EDESatlas.mat
 scores = [-3, +3];
 modes = [1,2,3,4,5,6,7,8,9,10];
 
@@ -16,7 +16,7 @@ output_folder = "../Images/pedatlas_characterization";
 for j=1:length(modes)
     mode = modes(j);
     for i=1:length(scores)
-        filename = strcat(output_folder,'/HC_modes/mode',num2str(uint8(mode)),'_',num2str(scores(i)),'.png');
+        filename = strcat(output_folder,'/modes/mode',num2str(uint8(mode)),'_',num2str(scores(i)),'.png');
         [EDmodel, ESmodel] = genEDESModels(EDESatlas,mode,scores(i));
         figure(i); clf
         hold on
@@ -39,7 +39,7 @@ end
 
 %% plot mean shape
 
-filename = strcat(output_folder,'/pedatlasHC_average_shape.png');
+filename = strcat(output_folder,'/pedatlas_average_shape.png');
 [EDmodel, ESmodel, ~] = genEDESModels(EDESatlas,0,0);
 figure(1); clf
 hold on
